@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .preview-image {
     width: 100%;
@@ -7,6 +8,12 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+.content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 @media (max-width: 480px)
 {
@@ -14,13 +21,14 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        height: 60vh;
+        height: 600px;
     }
     .content {
-        height: 100%;
+        height: 100vh;
+        padding: 7vw;
     }
     .preview-image {
-        height: 30vh;
+        height: 100%;
         background-image: url('images/image-product-mobile.jpg');
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -34,7 +42,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100%;
-        max-width: 600px;
+        max-width: 700px;
+    }
+    .content {
+        height: 100%;
+        padding: 5%;
     }
     .preview-image {
         height: 45vh;
@@ -45,22 +57,40 @@
     }
 }
 
+/* Fonts */
+.fraunces-700 {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+.montserrat-500 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.montserrat-700 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
 body {
     display: flex;
     background-color: hsl(30, 38%, 92%);
     align-items: center;
     justify-content: center;
-    margin-top: 20vh;
     padding: 5vw;
 }
 
-.content {
-    box-sizing: border-box;
-    padding: 7%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 .content *:not(:last-child) {
     margin: 0%;
@@ -70,6 +100,16 @@ body {
 .preview-card {
     background-color: #fff;
     border-radius: 10px;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+}
+h2 {
+    color:  hsl(228, 12%, 48%);
+}
+p {
+    color:  hsl(228, 12%, 48%);
 }
 
 button {
@@ -90,4 +130,26 @@ button {
     border-radius: 5px;
 }
 
+.icon-cart {
+    margin-right: 1vw;
+}
+
+.price-before-discount {
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-left: 7%;
+    color:  hsl(228, 12%, 48%);
+}
+
+.price-after-discount {
+    font-size: 40px;
+    color: hsl(158, 36%, 37%);
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
 
