@@ -1,3 +1,6 @@
+![image](https://github.com/Artemitol/Product-card/assets/148280392/1c0b2543-64c6-4493-b577-0d099086572e)
+![image](https://github.com/Artemitol/Product-card/assets/148280392/8cada1c8-f436-46a2-8c38-780c46ace76c)
+
 # Front-end Style Guide
 
 ## Layout
